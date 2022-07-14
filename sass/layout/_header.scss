@@ -86,11 +86,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  padding: 48px 25px;
   .container {
-    padding: 0;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -124,12 +121,12 @@
     margin-bottom: 32px;
   }
   &:last-child {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }
 .mob-menu__link {
   display: block;
-  @include font(500, 40px, 1.18, 0.02em);
+  @include font(500, 30px, 1.18, 0.02em);
   text-align: left;
   color: var(--primary-text-color);
   @include transition(color);
@@ -137,6 +134,9 @@
   &:focus,
   &:active {
     color: var(--action-color);
+  }
+  @include mobile {
+    @include font(500, 40px, 1.18, 0.02em);
   }
 }
 .mob-menu__wrap-bottom {
@@ -152,15 +152,21 @@
 .mob-contacts__link {
   display: block;
   margin-bottom: 32px;
-  @include font(500, 24px, 1.17, 0.02em);
+  @include font(500, 20px, 1.17, 0.02em);
   color: var(--secondary-text-color);
   &:first-child {
     margin-bottom: 0;
   }
+  @include mobile {
+    @include font(500, 24px, 1.17, 0.02em);
+  }
 }
 .tel {
-  @include font(500, 34px, 1.18, 0.02em);
+  @include font(500, 28px, 1.18, 0.02em);
   color: var(--action-color);
+  @include mobile {
+    @include font(500, 34px, 1.18, 0.02em);
+  }
 }
 .mob-soc__list {
   display: flex;
@@ -183,8 +189,11 @@
 }
 
 .mob-soc__link {
-  @include font(500, 18px, 1.22, 0.02em);
+  @include font(500, 14px, 1.22, 0.02em);
   color: var(--action-color);
+  @include mobile {
+    @include font(500, 18px, 1.22, 0.02em);
+  }
 }
 /*--------------------------------------------------Mobile menu finish---------------------------*/
 .menu {

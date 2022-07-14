@@ -46,7 +46,6 @@
 }
 
 .filter__item {
-  flex-basis: calc((100% - 46px) / 3);
   @include tablet {
     flex-basis: content;
   }
@@ -63,6 +62,7 @@
   @include transition(color);
   @include transition(background-color);
   @include transition(box-shadow);
+
   &:hover,
   &:focus {
     color: var(--primary-background-color);
@@ -86,6 +86,7 @@
   }
   @include desktop {
     width: calc((100% - 60px) / 3);
+    height: 100%;
   }
 }
 
@@ -124,7 +125,7 @@
     padding: 49px 24px 77px 24px;
   }
   @include desktop {
-    padding: 63px 24px;
+    padding: 63px 24px 63px 24px;
   }
 }
 .card-signature {

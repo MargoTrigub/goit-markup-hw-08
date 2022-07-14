@@ -222,12 +222,9 @@ ul {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  padding: 48px 25px;
 }
 .mob-menu .container {
-  padding: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -263,13 +260,13 @@ ul {
   margin-bottom: 32px;
 }
 .mob-menu__item:last-child {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .mob-menu__link {
   display: block;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   text-align: left;
@@ -278,6 +275,14 @@ ul {
 }
 .mob-menu__link:hover, .mob-menu__link:focus, .mob-menu__link:active {
   color: var(--action-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  }
 }
 
 .mob-menu__wrap-bottom {
@@ -296,7 +301,7 @@ ul {
   display: block;
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -304,13 +309,29 @@ ul {
 .mob-contacts__link:first-child {
   margin-bottom: 0;
 }
+@media screen and (min-width: 480px) {
+  .mob-contacts__link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
 
 .tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--action-color);
+}
+@media screen and (min-width: 480px) {
+  .tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  }
 }
 
 .mob-soc__list {
@@ -336,10 +357,18 @@ ul {
 
 .mob-soc__link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--action-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-soc__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
 }
 
 /*--------------------------------------------------Mobile menu finish---------------------------*/
@@ -477,25 +506,25 @@ ul {
   padding-bottom: 118px;
   margin: auto;
   background-color: var(--footer-background);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/x1/hero-mobile.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/x2/hero-mobile-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/x1/hero-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/x2/hero-tablet-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -504,12 +533,12 @@ ul {
     max-width: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/x1/hero-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop/x2/hero-desktop-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop-2x.jpg);
   }
 }
 
@@ -636,7 +665,6 @@ ul {
 
 .about {
   display: none;
-  padding-top: var(--typical-padding);
   padding-bottom: var(--typical-padding);
 }
 @media screen and (min-width: 1200px) {
@@ -940,14 +968,17 @@ ul {
   justify-content: center;
   flex-basis: content;
   padding: 0;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer-contacts {
+    margin-bottom: 0px;
     margin-right: 165px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-contacts {
+    margin-bottom: 0;
     margin-right: 0;
   }
 }
@@ -992,8 +1023,15 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.footer-address__item:not(last-child) {
+.footer-address__item .footer-contacts__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-address__item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-contacts__link {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-address__link {
@@ -1518,9 +1556,6 @@ ul {
   box-shadow: var(--secondary-box-shadow);
 }
 
-.filter__item {
-  flex-basis: calc((100% - 46px) / 3);
-}
 @media screen and (min-width: 768px) {
   .filter__item {
     flex-basis: content;
@@ -1569,6 +1604,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .projects__item {
     width: calc((100% - 60px) / 3);
+    height: 100%;
   }
 }
 
@@ -1611,7 +1647,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .card__text {
-    padding: 63px 24px;
+    padding: 63px 24px 63px 24px;
   }
 }
 
