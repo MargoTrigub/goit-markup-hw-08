@@ -29,12 +29,12 @@
 }
 .clients__item {
   width: calc((100% - 30px) / 2);
+  height: 92px;
   @include tablet {
     width: calc((100% - 60px) / 3);
   }
   @include desktop {
     width: 170px;
-    height: 92px;
     margin-right: 30px;
     &:last-child {
       margin-right: 0;
